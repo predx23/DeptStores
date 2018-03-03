@@ -1,0 +1,109 @@
+﻿@model DeptStores.Models.store
+
+@{
+    ViewBag.Title = "Add new store";
+}
+
+<br /><br /><br />
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal details">
+        <h2 style="margin-left:20px;">Add new store</h2>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+              
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control col-md-6" } })
+                @Html.ValidationMessageFor(model => model.Name, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Main Location</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control col-md-6", placeholder = "City, Country" } })
+                @Html.ValidationMessageFor(model => model.Location, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Description, new { @class = "form-control col-md-6", rows = 10 })
+                @Html.ValidationMessageFor(model => model.Description, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Visitors_Frequency, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Visitors_Frequency, new { htmlAttributes = new { @class = "form-control col-md-6" } })
+                @Html.ValidationMessageFor(model => model.Visitors_Frequency, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Profit_Yearly, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Profit_Yearly, new { htmlAttributes = new { @class = "form-control col-md-6" } })
+                @Html.ValidationMessageFor(model => model.Profit_Yearly, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+                
+        <div class="form-group">
+            @Html.LabelFor(model => model.Number_of_stores, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Number_of_stores, new { htmlAttributes = new { @class = "form-control col-md-6" } })
+                @Html.ValidationMessageFor(model => model.Number_of_stores, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Picture URL</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Picture, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control col-md-6",
+                   placeholder = "E-g: https://en.wikipedia.org/.../img.png"
+               }
+           })
+                @Html.ValidationMessageFor(model => model.Picture, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Pic_Courtesy_of, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Pic_Courtesy_of, new { htmlAttributes = new { @class = "form-control col-md-6", placeholder = "Source/Author; License" } })
+                @Html.ValidationMessageFor(model => model.Pic_Courtesy_of, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Your Name</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Added_by, new { htmlAttributes = new { @class = "form-control col-md-6" } })
+                @Html.ValidationMessageFor(model => model.Added_by, null, new { @class = "text-danger col-md-6" })
+            </div>
+        </div>
+                
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Add store" class="btn btn-primary" />
+                @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+        </div>
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+    </div>
+}
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

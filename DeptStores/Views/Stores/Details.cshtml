@@ -1,0 +1,112 @@
+﻿@model DeptStores.Models.store
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br />
+<h2>Details</h2>
+
+    <div class="container details" style="min-width:600px;">
+        <h3 style="margin-left:20px;">@Html.DisplayTextFor(model => model.Name)</h3>
+        <hr />
+                
+        <div class="container">
+            <div class="col-md-5 container-left">
+                <dl class="dl-horizontal">
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Location)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Location)<br /><br />
+                    </dd>
+
+                    <dt>
+                        About the store
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Description)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Visitors_Frequency)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Visitors_Frequency)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Profit_Yearly)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Profit_Yearly)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Number_of_stores)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Number_of_stores)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Likes)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Likes)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Dislikes)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Dislikes)<br /><br />
+                    </dd>
+
+                    <dt>
+                        Last edited by
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Added_by)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Created_Date)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Created_Date)<br /><br />
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Modified_Date)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Modified_Date)<br /><br />
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div class="col-md-5 container-right">
+                <img style="border-radius: 3px; box-shadow:0px 5px 25px rgba(0,0,0,0.5);" src="@Url.Content(Model.Picture)" height="300">
+                <p> <label style="font-size:9px; font-weight:300; font-style:italic;">Courtesy of: @Html.DisplayTextFor(model => model.Pic_Courtesy_of)</label> </p>
+                <br /><br />
+            </div>
+        </div>
+
+            <div class="col-md-offset-1 col-md-6" style="margin-left: 120px;">
+                @Html.ActionLink("Edit", "Edit", null, new { id = Model.Id }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+            </div>
+     </div>

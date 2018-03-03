@@ -1,0 +1,164 @@
+﻿body {
+    background: url("Images/ginza-725794_1920_Fotor-compressor.jpg") no-repeat center scroll;
+    background-size: cover;  
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    color: #fff !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.name {
+    text-align: center;
+    font-size: 16px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    color: #fff !important;
+}
+
+.heading-container {
+    padding: 10px 10px !important;
+    background: #4E6385 !important;
+    max-width: 750px !important;
+    box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.4);
+}
+
+.search-container {
+    padding: 19px 27px !important;
+    background: #4E6385 !important;
+    display:inline-block;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.3);
+}
+
+.search {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.table-container {
+    box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.4); }
+
+.table {
+    background-color: #4E6385;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.table-header {
+    background-color: #29466F;
+    color: #fff;
+}
+
+.btn-primary {
+    box-shadow: rgba(0,0,0,0.3) 2px 1px 5px 0px; 
+    background-color: #243F63 !important;
+    border-color: #122E54 !important;
+    color: #FFF !important;
+    border-radius: 0px 0px !important;
+}
+.btn-primary:hover {
+    box-shadow: rgba(0,0,0,0.35) 3px 3px 8px 0px;
+    background-color: #082C41 !important;
+    color: #FFC107 !important;
+    transition: 0.005s !important;
+}
+
+.btn-zoom {
+    box-shadow: rgba(0,0,0,0.3) 2px 1px 4px 0px;
+    background-color: #243F63 !important;
+    color: #FFF !Important;
+    border-color: #122E54 !important;
+    border-radius: 0px 0px !important;
+    padding: 6px 10px 8px 10px !important;
+}
+.btn-zoom:hover {
+    background-color: #082C41 !important;
+    transform: scale(1.12);
+    transition: 0.005s;
+}
+
+.btn-secondary {
+    background-color: #8391A9 !important;
+    color: #fff;
+    border-radius: 0px 0px !important;
+}
+.btn-secondary:hover {
+    color: #fff !Important;
+    background-color: #71829D !important;
+    transition: 0.005s;
+}
+
+.btn-danger { 
+    background-color: #FF3333 !important;
+    border-radius: 0px 0px !important;
+}
+.btn-danger:hover {
+    background-color: #FF0000 !important;
+}
+
+.details {
+    padding: 20px;
+    padding-bottom: 30px;
+    background-color: #4E6385 !important;
+    color: #fff !Important;
+    box-shadow: 6px 6px 30px 5px rgba(0,0,0,0.5);
+}
+
+.container-left { /*In Details View*/
+    float: left !important;
+    margin-right: 80px;
+}
+
+.container-right { /*In Details View*/
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.icon-thumbs-up {
+    color: #fff;
+}
+.icon-thumbs-up:hover {
+    color: yellowgreen !important;
+    text-decoration: none !important;
+}
+.icon-thumbs-up:active {
+    background: none !important;
+    text-decoration: none !important;
+}
+
+.icon-thumbs-down {
+    color: #fff;
+}
+.icon-thumbs-down:hover {
+    color: #FF0000 !important;
+    text-decoration: none !important;
+}
+.icon-thumbs-down:active {
+    background: none !important;
+    text-decoration: none !important;
+}
