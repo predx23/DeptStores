@@ -1,5 +1,5 @@
 ﻿body {
-    background: url("Images/ginza-725794_1920_Fotor-compressor.jpg") no-repeat center scroll;
+    background: url("Images/cleveland-1936108_1920_Fotor-compressor.jpg") no-repeat center scroll;
     background-size: cover;  
     min-height: 100%;
     padding-top: 50px;
@@ -43,7 +43,7 @@ textarea {
     padding: 10px 10px !important;
     background: #4E6385 !important;
     max-width: 750px !important;
-    box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.45);
 }
 
 .search-container {
@@ -51,7 +51,7 @@ textarea {
     background: #4E6385 !important;
     display:inline-block;
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 6px rgba(0,0,0,0.35);
 }
 
 .search {
@@ -60,7 +60,7 @@ textarea {
 }
 
 .table-container {
-    box-shadow: 0px 0px 40px 6px rgba(0,0,0,0.4); }
+    box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.5); }
 
 .table {
     background-color: #4E6385;
